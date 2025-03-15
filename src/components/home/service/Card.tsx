@@ -62,7 +62,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, del
                         <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 mb-4 group-hover:border-teal-500/50 group-hover:bg-white/10 transition-colors">
                             <div className="text-teal-400">{React.cloneElement(icon as React.ReactElement)}</div>
                         </div>
-                        <CardTitle className="text-xl group-hover:text-teal-400 transition-colors">{title}</CardTitle>
+                        <CardTitle className="text-xl text-white group-hover:text-teal-400 transition-colors">{title}</CardTitle>
                         <CardDescription className="text-white/50 group-hover:text-white/70 transition-colors">{description}</CardDescription>
                     </CardHeader>
                 </Card>

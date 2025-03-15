@@ -100,8 +100,8 @@ const DreamPrintMockup = () => {
                                     <div className="w-2 h-2 rounded-full bg-white/50"></div>
                                 </div>
                             </div>
-                            <div className="py-1 px-3 rounded-full bg-white/10 backdrop-blur-sm text-xs">
-                                Preview
+                            <div className="py-2 px-3 rounded-full bg-white/10 backdrop-blur-sm text-xs">
+                                Studio
                             </div>
                         </div>
                     </div>

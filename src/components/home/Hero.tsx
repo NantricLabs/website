@@ -5,10 +5,11 @@ import { motion } from 'framer-motion';
 import { ServiceCards } from './service/Card';
 
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 export const HeroSection = () => {
     return (
-        <section className="relative flex items-center pt-32 pb-20">
+        <section className="relative flex items-center pt-32 pb-20" id="home">
             {/* Background Elements */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute w-full h-full bg-[radial-gradient(ellipse_at_top_right,_rgba(20,184,166,0.15),transparent_50%)]"></div>
@@ -53,12 +54,16 @@ export const HeroSection = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-5">
-                                <Button className="bg-teal-500 hover:bg-teal-400 text-black hover:text-black px-8 py-6 text-md font-medium h-14 rounded-full shadow-md shadow-teal-500/20">
-                                    Our Services
-                                </Button>
-                                <Button variant="outline" className="border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-teal-400 px-8 py-6 text-md font-medium h-14 rounded-full">
-                                    View Projects
-                                </Button>
+                                <Link href="#projects" className="flex items-center bg-teal-500 hover:bg-teal-400 text-black hover:text-black px-8 py-6 text-md font-medium h-14 rounded-full shadow-md shadow-teal-500/20">
+                                    <p>
+                                        Our Projects
+                                    </p>
+                                </Link>
+                                <Link href="#projects" className="flex items-center border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-teal-400 px-8 py-6 text-md font-medium h-14 rounded-full">
+                                    <p>
+                                        Our Projects
+                                    </p>
+                                </Link>
                             </div>
                         </motion.div>
                     </div>

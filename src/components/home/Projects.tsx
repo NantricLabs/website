@@ -13,7 +13,7 @@ export const ProjectsSection = () => {
             title: "Dreamprint",
             tag: "3D Printing",
             description: "A comprehensive platform where users can upload 3D models, customize specifications, and order physical parts with just a few clicks. Features real-time pricing, status tracking, and multiple material options.",
-            technologies: ["NextJS", "Three.js", "AWS", "3D Rendering"],
+            technologies: ["3D Printing", "Manufacturing", "Prototyping", "Design"],
             icon: <Cuboid size={100} className="text-teal-400/50" strokeWidth={1} />,
             reverse: false
         },
@@ -22,7 +22,7 @@ export const ProjectsSection = () => {
             title: "UpAlert",
             tag: "Monitoring",
             description: "An advanced uptime monitoring system that tracks website and service availability with deep analytical insights. Features instant notifications, historical data analysis, and customizable reporting.",
-            technologies: ["React", "Node.js", "GraphQL", "TimescaleDB"],
+            technologies: ["Realtime", "Tracking", "Monitoring", "Statuspages", "Dashboard"],
             icon: <Clock size={100} className="text-teal-400/50" strokeWidth={1} />,
             reverse: true
         }
