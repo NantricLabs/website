@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Construction, Home, Code, ArrowLeft, Hammer, Workflow, Loader2 } from 'lucide-react';
 
-export const UnderConstructionPage = () => {
+export default function Page() {
     // Animation for the code lines
     const [codeLines, setCodeLines] = React.useState<any>([]);
     const [dotCount, setDotCount] = React.useState<any>(0);
@@ -190,5 +190,3 @@ export const UnderConstructionPage = () => {
         </section>
     );
 };
-
-export default UnderConstructionPage;
