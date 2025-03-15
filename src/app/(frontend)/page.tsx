@@ -1,9 +1,14 @@
+"use client";
 
-import Hero from "@/components/Hero"
+import { HeroSection } from '@/components/home/Hero';
+import { ProjectsSection } from '@/components/home/Projects';
+import React from 'react'
 
-export default async function Page() {
-
+export default function Home() {
     return (
-        <Hero />
+        <>
+            <HeroSection />
+            <ProjectsSection />
+        </>
     )
 }

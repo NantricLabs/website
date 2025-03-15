@@ -30,7 +30,6 @@
     ".prettierrc.json": true,
     "postcss.config.js": true,
     "eslint.config.mjs": true,
-    "src/app/(payload)": true,
     "package-lock.json": true,
   },
   "[json]": {
