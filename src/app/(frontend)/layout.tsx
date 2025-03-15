@@ -1,5 +1,3 @@
-// src/app/(frontend)/layout.tsx
-
 import { Inter } from 'next/font/google'
 import '@/styles/globals.css'
 import { Header } from '@/components/home/Header'
@@ -16,21 +14,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <body
-                // Put your color, text, selection, and overflow styles on <body>
                 className={`${inter.variable} font-sans bg-black text-white 
-                    overflow-x-hidden selection:bg-teal-500 selection:text-black`}
+          overflow-x-hidden selection:bg-teal-500 selection:text-black`}
             >
-                {/* The "fixed inset-0" overlay you had in the <div> can move here */}
+                {/* Overlay pattern in background */}
                 <div
                     className="fixed inset-0 z-40 pointer-events-none 
-                     opacity-[0.015] bg-[url('data:image/svg+xml;base64,...')]"
+          opacity-[0.015] bg-[url('data:image/svg+xml;base64,...')]"
                 />
-
-                {/* If you want the footer pinned at the bottom unless content is taller, 
-            wrap everything in a flex container with min-h-screen. */}
-                <div className="flex flex-col min-h-screen relative z-50">
+                {/* Wrap entire layout in a flex container with min-h-screen 
+            to pin the footer at the bottom (unless content is taller). */}
+                <div className="relative z-50 flex flex-col min-h-screen">
                     <Header />
-                    {/* Make main flex-1 to fill leftover vertical space */}
                     <main className="flex-1">{children}</main>
                     <Footer />
                 </div>

@@ -18,7 +18,7 @@ interface ProjectProps {
 }
 
 export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
-    const { id, title, tag, description, technologies, icon, reverse } = project;
+    const { id, title, tag, description, technologies, reverse } = project;
 
     return (
         <div className={`grid grid-cols-1 lg:grid-cols-2 items-center gap-12 ${reverse ? 'direction-rtl' : ''}`}>
@@ -36,20 +36,23 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                         {tag}
                     </div>
                 </h3>
-
-                <p className="text-white/60 mb-6 leading-relaxed">
-                    {description}
-                </p>
-
+                <p className="text-white/60 mb-6 leading-relaxed">{description}</p>
                 <div className="flex flex-wrap gap-2 mb-8">
                     {technologies.map((tech, index) => (
-                        <span key={index} className="text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-white/70 hover:border-teal-500/30 hover:text-teal-400 transition-colors cursor-default">
+                        <span
+                            key={index}
+                            className="text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10 
+              text-white/70 hover:border-teal-500/30 hover:text-teal-400 transition-colors cursor-default"
+                        >
                             {tech}
                         </span>
                     ))}
                 </div>
 
-                <Button variant="outline" className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full pl-6 pr-5 py-6 h-auto shadow-lg shadow-black/5">
+                <Button
+                    variant="outline"
+                    className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full pl-6 pr-5 py-6 h-auto shadow-lg shadow-black/5"
+                >
                     <span className="mr-3">View Case Study</span>
                     <span className="p-2 rounded-full bg-white/10 group-hover:bg-teal-500/20 transition-colors">
                         <ArrowRight size={14} />
@@ -65,11 +68,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                 whileHover={{ scale: 1.03 }}
                 className={`relative ${reverse ? 'order-2' : 'order-1 lg:order-2'}`}
             >
-                {project.title === "Dreamprint" ? (
-                    <DreamPrintMockup />
-                ) : (
-                    <UpAlertMockup />
-                )}
+                {title === "Dreamprint" ? <DreamPrintMockup /> : <UpAlertMockup />}
             </motion.div>
         </div>
     );
@@ -78,9 +77,9 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
 const DreamPrintMockup = () => {
     return (
         <>
-            <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full"></div>
+            <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full" />
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-xl shadow-black/30">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]"></div>
+                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]" />
                 <div className="absolute inset-6 flex items-center justify-center">
                     <div className="relative w-full h-full">
                         {/* 3D Model Preview Mockup */}
@@ -91,13 +90,13 @@ const DreamPrintMockup = () => {
                         <div className="absolute bottom-0 left-0 right-0 flex justify-between p-4 bg-gradient-to-t from-black/40 to-transparent">
                             <div className="flex gap-2">
                                 <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <div className="w-2 h-2 rounded-full bg-teal-400"></div>
+                                    <div className="w-2 h-2 rounded-full bg-teal-400" />
                                 </div>
                                 <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <div className="w-2 h-2 rounded-full bg-white/50"></div>
+                                    <div className="w-2 h-2 rounded-full bg-white/50" />
                                 </div>
                                 <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <div className="w-2 h-2 rounded-full bg-white/50"></div>
+                                    <div className="w-2 h-2 rounded-full bg-white/50" />
                                 </div>
                             </div>
                             <div className="py-2 px-3 rounded-full bg-white/10 backdrop-blur-sm text-xs">
@@ -114,17 +113,17 @@ const DreamPrintMockup = () => {
 const UpAlertMockup = () => {
     return (
         <>
-            <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full"></div>
+            <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full" />
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-xl shadow-black/30">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]"></div>
+                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]" />
                 <div className="absolute inset-8 flex flex-col">
                     {/* Dashboard Mockup */}
                     <div className="flex items-center justify-between mb-6">
                         <div className="text-sm font-medium">Server Status Dashboard</div>
                         <div className="flex gap-1.5">
-                            <div className="w-2 h-2 rounded-full bg-teal-400"></div>
-                            <div className="w-2 h-2 rounded-full bg-white/40"></div>
-                            <div className="w-2 h-2 rounded-full bg-white/40"></div>
+                            <div className="w-2 h-2 rounded-full bg-teal-400" />
+                            <div className="w-2 h-2 rounded-full bg-white/40" />
+                            <div className="w-2 h-2 rounded-full bg-white/40" />
                         </div>
                     </div>
 
@@ -138,7 +137,7 @@ const UpAlertMockup = () => {
                                         key={i}
                                         className="flex-1 bg-gradient-to-t from-teal-500/80 to-teal-500/20 rounded-sm"
                                         style={{ height: `${height}%` }}
-                                    ></div>
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -146,7 +145,7 @@ const UpAlertMockup = () => {
                             <div className="text-xs text-white/40 mb-2">Status</div>
                             <div className="flex-1 flex flex-col justify-center items-center">
                                 <div className="w-12 h-12 rounded-full bg-teal-500/10 flex items-center justify-center">
-                                    <div className="w-3 h-3 rounded-full bg-teal-400"></div>
+                                    <div className="w-3 h-3 rounded-full bg-teal-400" />
                                 </div>
                                 <div className="text-xs mt-2 text-center text-teal-400">Online</div>
                             </div>

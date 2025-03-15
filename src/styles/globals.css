@@ -3,38 +3,37 @@
 @tailwind utilities;
 
 @layer base {
- 
   body {
     @apply bg-black text-white overflow-x-hidden;
     font-family: 'Inter', sans-serif;
   }
-  
+
   /* Smooth transition for all elements */
   * {
     @apply transition-colors duration-300;
   }
-  
+
   /* Glowing effects */
   .glow-teal {
     box-shadow: 0 0 15px 2px rgba(20, 184, 166, 0.3);
   }
-  
+
   /* Glass effect */
   .glass {
     @apply backdrop-blur-lg bg-white/5 border border-white/10;
   }
-  
+
   /* Text styling */
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold;
   }
-  
+
   /* Focus styles */
   input:focus, textarea:focus, button:focus {
     @apply outline-none ring-2 ring-teal-500/50;
   }
-  
-  /* Button styles */
+
+  /* Button hover animations */
   button, .button {
     @apply transition-all duration-300 transform hover:scale-105;
   }
@@ -68,6 +67,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -105,7 +105,7 @@
   }
 }
 
-/* Animation for gradient text */
+/* Keyframes for gradient text animation */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
