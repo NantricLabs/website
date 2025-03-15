@@ -68,7 +68,7 @@ export const UnderConstructionPage = () => {
                             </span>
                         </h1>
                         <p className="text-lg text-white/60 max-w-2xl mx-auto">
-                            We're working hard to bring you something amazing. Please check back soon
+                            We&apos;re working hard to bring you something amazing. Please check back soon
                             or return to our homepage.
                         </p>
                     </motion.div>

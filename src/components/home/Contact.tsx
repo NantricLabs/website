@@ -41,13 +41,13 @@ export const ContactPage = () => {
                             Get in Touch
                         </div>
                         <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-                            Let's Start a{' '}
+                            Let&apos;s Start a{' '}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-400 to-white animate-gradient">
                                 Conversation
                             </span>
                         </h1>
                         <p className="text-lg text-white/60 max-w-2xl mx-auto">
-                            Have a project in mind or need assistance with your digital solutions? We're here to help.
+                            Have a project in mind or need assistance with your digital solutions? We&apos;re here to help.
                             Fill out the form below and our team will get back to you promptly.
                         </p>
                     </motion.div>
@@ -210,7 +210,7 @@ const ContactForm = () => {
                     </div>
                     <h3 className="text-xl font-bold mb-2">Message Sent!</h3>
                     <p className="text-white/60 text-center max-w-md">
-                        Thank you for reaching out. We'll get back to you as soon as possible.
+                        Thank you for reaching out. We&apos;ll get back to you as soon as possible.
                     </p>
                 </motion.div>
             ) : (

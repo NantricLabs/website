@@ -4,7 +4,7 @@ import { getPayload } from './connector'
 
 import { Contact } from '@/types/payload-types'
 
-export async function submitMessage(data: Omit<Contact, "id" | "createdAt" | "updatedAt">): Promise<Boolean> {
+export async function submitMessage(data: Omit<Contact, "id" | "createdAt" | "updatedAt">): Promise<boolean> {
     const payload = await getPayload()
 
     return Boolean(await payload.create({
