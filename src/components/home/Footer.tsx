@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from 'next/image'
 import { Separator } from "@/components/ui/separator";
 import { Twitter, Github, Linkedin, Mail, MapPin } from 'lucide-react';
-import { Logo } from './Logo';
+
+import aLogo from '@/assets/logo.png'
 
 export const Footer = () => {
     return (
@@ -15,8 +17,8 @@ export const Footer = () => {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 mb-16">
                     <div className="lg:w-1/3">
-                        <div className="mb-6">
-                            <Logo />
+                        <div className="mb-6 -ml-5 -my-10">
+                            <Image src={aLogo} alt="Nantric Logo" className='h-20 w-auto' />
                         </div>
 
                         <p className="text-white/60 mb-8 leading-relaxed">

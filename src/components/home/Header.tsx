@@ -3,7 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import { Logo } from './Logo';
+import Image from 'next/image'
+
+import aLogo from '@/assets/logo.png'
 
 export const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -53,7 +55,7 @@ export const Header = () => {
                         className="flex items-center"
                     >
                         <Link href="/">
-                            <Logo />
+                            <Image src={aLogo} alt="Nantric Logo" className='h-20 -ml-5 -my-5 w-auto' />
                         </Link>
                     </motion.div>
 
