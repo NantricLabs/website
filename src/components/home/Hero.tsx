@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ServiceCards } from './service/Card';
+import { AnimatedDevelopmentVisual } from './Animation';
 
 export const HeroSection = () => {
     return (
@@ -63,15 +64,16 @@ export const HeroSection = () => {
                                     Our Projects
                                 </Link>
                                 <Link
-                                    href="#projects"
+                                    href="#services"
                                     className="flex items-center border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-teal-400 px-8 py-6 text-md font-medium h-14 rounded-full"
                                 >
-                                    Our Projects
+                                    Our Services
                                 </Link>
                             </div>
                         </motion.div>
                     </div>
 
+                    {/* Animated Development Visual */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -83,72 +85,9 @@ export const HeroSection = () => {
 
                         <div className="relative border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm p-4 bg-white/5 shadow-xl shadow-black/20">
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
-                            <div className="grid grid-cols-12 gap-4 aspect-[4/3]">
-                                {/* Top Left Panel */}
-                                <div className="col-span-8 rounded-xl border border-white/10 bg-white/5 p-4 flex flex-col">
-                                    <div className="flex items-center justify-between mb-2">
-                                        <div className="text-sm font-medium">Server Status</div>
-                                        <div className="text-xs text-white/40">Live</div>
-                                    </div>
-                                    <div className="grid grid-cols-4 gap-3 flex-1">
-                                        {[...Array(12)].map((_, i) => (
-                                            <div
-                                                key={i}
-                                                className="rounded-lg border border-white/10 bg-white/5 flex items-center justify-center aspect-square text-xs hover:border-teal-500/30 transition-colors"
-                                            >
-                                                <div
-                                                    className={`w-2 h-2 rounded-full mr-1 ${i % 4 === 0 ? 'bg-teal-400' : 'bg-white/40'
-                                                        }`}
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
 
-                                {/* Top Right Panel */}
-                                <div className="col-span-4 rounded-xl border border-white/10 bg-white/5 p-4 hover:border-teal-500/30 transition-colors">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <div className="text-sm font-medium">Load</div>
-                                        <div className="text-xs text-teal-400">42%</div>
-                                    </div>
-                                    <div className="space-y-2 h-full flex flex-col justify-evenly">
-                                        {[...Array(4)].map((_, i) => (
-                                            <div key={i} className="h-1.5 bg-white/10 rounded-full overflow-hidden">
-                                                <div
-                                                    className="h-full bg-gradient-to-r from-teal-500 to-white/30"
-                                                    style={{ width: `${75 - i * 15}%` }}
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Bottom Left Panel */}
-                                <div className="col-span-4 rounded-xl border border-white/10 bg-white/5 p-4 hover:border-teal-500/30 transition-colors">
-                                    <div className="text-sm font-medium mb-2">Uptime</div>
-                                    <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-white">
-                                        99.9%
-                                    </div>
-                                    <div className="text-xs text-white/40 mt-1">Last 30 days</div>
-                                </div>
-
-                                {/* Bottom Right Panel */}
-                                <div className="col-span-8 rounded-xl border border-white/10 bg-white/5 p-4 hover:border-teal-500/30 transition-colors">
-                                    <div className="flex items-center justify-between mb-3">
-                                        <div className="text-sm font-medium">Traffic</div>
-                                        <div className="text-xs text-white/40">Real-time</div>
-                                    </div>
-                                    <div className="h-24 flex items-end space-x-1">
-                                        {[45, 80, 30, 55, 60, 95, 70, 35, 85, 65, 40, 75, 50, 90, 55, 60].map((height, i) => (
-                                            <div
-                                                key={i}
-                                                className="flex-1 bg-gradient-to-t from-teal-500/50 to-teal-500/10 rounded-sm"
-                                                style={{ height: `${height}%` }}
-                                            />
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
+                            {/* Animated Development Process Visual */}
+                            <AnimatedDevelopmentVisual />
                         </div>
                     </motion.div>
                 </div>
