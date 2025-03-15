@@ -52,23 +52,23 @@ export const Header = () => {
                         transition={{ duration: 0.5 }}
                         className="flex items-center"
                     >
-                        <Link href="#home">
+                        <Link href="/">
                             <Logo />
                         </Link>
                     </motion.div>
 
                     <div className="flex items-center gap-4">
                         <Link
-                            href="/login"
+                            href="/wip"
                             className="flex items-center py-2 text-white/70 hover:text-white hover:bg-teal-950/30 rounded-full px-4"
                         >
                             <p>Login</p>
                         </Link>
                         <Link
-                            href="mailto:info@nantric.com"
+                            href="#contact"
                             className="flex items-center bg-teal-500 hover:bg-teal-400 text-black font-medium px-5 h-10 rounded-full shadow-lg shadow-teal-500/20 transition-all hover:shadow-teal-400/30"
                         >
-                            <p>Get in touch</p>
+                            <p>Get in Touch</p>
                         </Link>
                     </div>
                 </div>

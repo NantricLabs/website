@@ -11,6 +11,7 @@ import { Users } from './src/backend/collections/Users'
 import { Media } from './src/backend/collections/Media'
 
 import { migrations } from './src/backend/migrations'
+import { Contact } from '@/backend/collections/Contact'
 
 if (!process.env.PAYLOAD_SECRET) throw new Error('No environment variable for PAYLOAD_SECRET defined, use the .env.example file.')
 
@@ -23,7 +24,8 @@ export default buildConfig({
   serverURL: process.env.NEXT_PUBLIC_DOMAIN || 'http://localhost:3000',
   collections: [
     Users,
-    Media
+    Media,
+    Contact
   ],
   admin: {
     user: Users.slug,
@@ -40,8 +42,8 @@ export default buildConfig({
     migrationDir: path.resolve(dirname, './src/backend/migrations'),
   }),
   email: nodemailerAdapter({
-    defaultFromAddress: 'info@upalert.me',
-    defaultFromName: 'UpAlert',
+    defaultFromAddress: 'noreply@nantric.com',
+    defaultFromName: 'Nantric',
     transportOptions: {
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,

@@ -26,28 +26,13 @@ export const Footer = () => {
 
                         <div className="flex gap-4">
                             <a
-                                href="#"
-                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center 
-                border border-white/10 text-white/40 hover:text-teal-400 
-                hover:border-teal-500/50 transition-colors"
-                            >
-                                <Twitter size={16} />
-                            </a>
-                            <a
-                                href="#"
+                                href="https://github.com/NantricLabs"
+                                target="_blank"
                                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center 
                 border border-white/10 text-white/40 hover:text-teal-400 
                 hover:border-teal-500/50 transition-colors"
                             >
                                 <Github size={16} />
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center 
-                border border-white/10 text-white/40 hover:text-teal-400 
-                hover:border-teal-500/50 transition-colors"
-                            >
-                                <Linkedin size={16} />
                             </a>
                         </div>
                     </div>
@@ -57,19 +42,16 @@ export const Footer = () => {
                             <h3 className="font-medium text-white mb-6">Services</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">Custom Software</a>
+                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Custom Software</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">SaaS Development</a>
+                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">SaaS Development</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">Hosting &amp; Cloud</a>
+                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Hosting &amp; Cloud</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">UI/UX Design</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">API Integration</a>
+                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">API Integration</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,19 +60,13 @@ export const Footer = () => {
                             <h3 className="font-medium text-white mb-6">Company</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">About Us</a>
+                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">Careers</a>
+                                    <a href="#contact" className="text-white/60 hover:text-teal-400 transition-colors">Contact</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">Case Studies</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white/60 hover:text-teal-400 transition-colors">Contact</a>
+                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Blog</a>
                                 </li>
                             </ul>
                         </div>
@@ -128,19 +104,19 @@ export const Footer = () => {
                     </p>
                     <div className="flex gap-8">
                         <a
-                            href="#"
+                            href="/wip"
                             className="text-white/40 hover:text-teal-400 text-sm transition-colors"
                         >
                             Privacy Policy
                         </a>
                         <a
-                            href="#"
+                            href="/wip"
                             className="text-white/40 hover:text-teal-400 text-sm transition-colors"
                         >
                             Terms of Service
                         </a>
                         <a
-                            href="#"
+                            href="/wip"
                             className="text-white/40 hover:text-teal-400 text-sm transition-colors"
                         >
                             Sitemap

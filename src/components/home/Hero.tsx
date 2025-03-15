@@ -30,7 +30,7 @@ export const HeroSection = () => {
             </div>
 
             <div className="container mx-auto px-6 relative z-10 mt-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div className="grid grid-cols-1 h-[625px] lg:grid-cols-2 gap-16">
                     <div>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -56,16 +56,16 @@ export const HeroSection = () => {
                                 and create exceptional user experiences.
                             </p>
 
-                            <div className="flex flex-col sm:flex-row gap-5">
+                            <div className="flex flex-col sm:flex-row gap-y-4">
                                 <Link
-                                    href="#projects"
-                                    className="flex items-center bg-teal-500 hover:bg-teal-400 text-black px-8 py-6 text-md font-medium h-14 rounded-full shadow-md shadow-teal-500/20"
+                                    href="#contact"
+                                    className="flex items-center bg-teal-500 hover:bg-teal-400 text-black py-6 text-md font-medium h-14 rounded-full shadow-md shadow-teal-500/20 mx-auto sm:ml-0 sm:mr-4 px-16 sm:px-8"
                                 >
                                     Contact us
                                 </Link>
                                 <Link
                                     href="#projects"
-                                    className="flex items-center border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-teal-400 px-8 py-6 text-md font-medium h-14 rounded-full"
+                                    className="flex items-center border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-teal-400 py-6 text-md font-medium h-14 rounded-full mx-auto sm:ml-0 sm:mr-4 px-16 sm:px-8"
                                 >
                                     Our Projects
                                 </Link>

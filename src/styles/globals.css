@@ -8,6 +8,10 @@
     font-family: 'Inter', sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   /* Smooth transition for all elements */
   * {
     @apply transition-colors duration-300;

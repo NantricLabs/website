@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Send, MapPin, Phone, Check } from 'lucide-react';
 import Link from 'next/link';
+import { submitMessage } from '@/functions/contact';
 
 export const ContactPage = () => {
     return (
@@ -125,6 +126,7 @@ const ContactForm = () => {
     const [errors, setErrors] = useState<Record<string, string | null>>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormState((prev) => ({
@@ -171,10 +173,8 @@ const ContactForm = () => {
 
         setIsSubmitting(true);
 
-        // Simulate API call with timeout
-        setTimeout(() => {
-            // Here you would normally make an API call to your backend
-            console.log('Form submitted:', formState);
+        try {
+            await submitMessage(formState); // Call the submitMessage function with form data
             setIsSubmitting(false);
             setIsSubmitted(true);
 
@@ -189,7 +189,10 @@ const ContactForm = () => {
                     message: '',
                 });
             }, 5000);
-        }, 1500);
+        } catch (error) {
+            console.error('Error submitting message:', error);
+            setIsSubmitting(false);
+        }
     };
 
     return (

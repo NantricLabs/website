@@ -15,15 +15,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <html lang="en">
             <body
                 className={`${inter.variable} font-sans bg-black text-white 
-          overflow-x-hidden selection:bg-teal-500 selection:text-black`}
+          overflow-x-hidden selection:bg-teal-500 selection:text-black scroll-smooth`}
             >
-                {/* Overlay pattern in background */}
-                <div
-                    className="fixed inset-0 z-40 pointer-events-none 
-          opacity-[0.015] bg-[url('data:image/svg+xml;base64,...')]"
-                />
-                {/* Wrap entire layout in a flex container with min-h-screen 
-            to pin the footer at the bottom (unless content is taller). */}
                 <div className="relative z-50 flex flex-col min-h-screen">
                     <Header />
                     <main className="flex-1">{children}</main>
