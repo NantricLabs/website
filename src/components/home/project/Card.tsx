@@ -43,15 +43,15 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                     {technologies.map((tech, index) => (
-                        <span key={index} className="text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-white/70">
+                        <span key={index} className="text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-white/70 hover:border-teal-500/30 hover:text-teal-400 transition-colors cursor-default">
                             {tech}
                         </span>
                     ))}
                 </div>
 
-                <Button variant="outline" className="group border-white/10 hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full pl-6 pr-5 py-6 h-auto">
+                <Button variant="outline" className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full pl-6 pr-5 py-6 h-auto shadow-lg shadow-black/5">
                     <span className="mr-3">View Case Study</span>
-                    <span className="p-2 rounded-full bg-white/5 group-hover:bg-teal-500/10 transition-colors">
+                    <span className="p-2 rounded-full bg-white/10 group-hover:bg-teal-500/20 transition-colors">
                         <ArrowRight size={14} />
                     </span>
                 </Button>
@@ -62,6 +62,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
+                whileHover={{ scale: 1.03 }}
                 className={`relative ${reverse ? 'order-2' : 'order-1 lg:order-2'}`}
             >
                 {project.title === "Dreamprint" ? (
@@ -78,7 +79,7 @@ const DreamPrintMockup = () => {
     return (
         <>
             <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full"></div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-xl shadow-black/30">
                 <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]"></div>
                 <div className="absolute inset-6 flex items-center justify-center">
                     <div className="relative w-full h-full">
@@ -114,7 +115,7 @@ const UpAlertMockup = () => {
     return (
         <>
             <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full"></div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-xl shadow-black/30">
                 <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]"></div>
                 <div className="absolute inset-8 flex flex-col">
                     {/* Dashboard Mockup */}
@@ -129,7 +130,7 @@ const UpAlertMockup = () => {
 
                     {/* Status panels */}
                     <div className="flex-1 grid grid-cols-6 gap-3">
-                        <div className="col-span-4 rounded-lg bg-white/5 p-3 flex flex-col">
+                        <div className="col-span-4 rounded-lg bg-white/5 p-3 flex flex-col hover:bg-white/10 transition-colors">
                             <div className="text-xs text-white/40 mb-2">Uptime</div>
                             <div className="flex-1 flex items-end space-x-1">
                                 {[65, 85, 95, 75, 100, 85, 90, 95].map((height, i) => (
@@ -141,7 +142,7 @@ const UpAlertMockup = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="col-span-2 rounded-lg bg-white/5 p-3 flex flex-col">
+                        <div className="col-span-2 rounded-lg bg-white/5 p-3 flex flex-col hover:bg-white/10 transition-colors">
                             <div className="text-xs text-white/40 mb-2">Status</div>
                             <div className="flex-1 flex flex-col justify-center items-center">
                                 <div className="w-12 h-12 rounded-full bg-teal-500/10 flex items-center justify-center">
@@ -150,12 +151,12 @@ const UpAlertMockup = () => {
                                 <div className="text-xs mt-2 text-center text-teal-400">Online</div>
                             </div>
                         </div>
-                        <div className="col-span-3 rounded-lg bg-white/5 p-3">
+                        <div className="col-span-3 rounded-lg bg-white/5 p-3 hover:bg-white/10 transition-colors">
                             <div className="text-xs text-white/40 mb-2">Response Time</div>
                             <div className="text-2xl font-bold text-teal-400">42ms</div>
                             <div className="text-xs text-white/40">AVG</div>
                         </div>
-                        <div className="col-span-3 rounded-lg bg-white/5 p-3">
+                        <div className="col-span-3 rounded-lg bg-white/5 p-3 hover:bg-white/10 transition-colors">
                             <div className="text-xs text-white/40 mb-2">Reliability</div>
                             <div className="text-2xl font-bold text-white">99.9%</div>
                             <div className="text-xs text-white/40">Last 90 days</div>

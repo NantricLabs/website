@@ -33,6 +33,8 @@ export const ProjectsSection = () => {
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                <div className="absolute top-1/2 -translate-y-1/2 right-0 w-1/3 aspect-square bg-teal-500/5 rounded-full blur-3xl opacity-50"></div>
+                <div className="absolute top-3/4 -translate-y-1/2 left-0 w-1/4 aspect-square bg-teal-500/5 rounded-full blur-3xl opacity-30"></div>
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
@@ -42,7 +44,7 @@ export const ProjectsSection = () => {
                             Featured Work
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold max-w-md leading-tight">
-                            Projects with Impact
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-400">Projects</span> with Impact
                         </h2>
                     </div>
                     <p className="text-white/60 max-w-md md:text-right">
@@ -55,6 +57,21 @@ export const ProjectsSection = () => {
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="mt-20 text-center"
+                >
+                    <Button variant="outline" className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full px-8 py-6 h-auto mx-auto">
+                        <span className="mr-3">View All Projects</span>
+                        <span className="p-2 rounded-full bg-white/10 group-hover:bg-teal-500/20 transition-colors">
+                            <ArrowRight size={16} />
+                        </span>
+                    </Button>
+                </motion.div>
             </div>
         </section>
     );

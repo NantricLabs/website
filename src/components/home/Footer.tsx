@@ -9,7 +9,7 @@ export const Footer = () => {
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-                <div className="absolute -bottom-40 left-1/2 -translate-x-1/2 w-3/4 aspect-[4/1] bg-teal-500/20 blur-[120px] rounded-full opacity-30"></div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 aspect-[4/1] bg-teal-500/20 blur-[120px] rounded-full opacity-30"></div>
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
@@ -65,18 +65,14 @@ export const Footer = () => {
                             <ul className="space-y-4">
                                 <li className="flex items-center gap-3">
                                     <Mail size={16} className="text-teal-400" />
-                                    <a href="mailto:hello@nantric.com" className="text-white/60 hover:text-teal-400 transition-colors">hello@nantric.com</a>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Phone size={16} className="text-teal-400" />
-                                    <a href="tel:+11234567890" className="text-white/60 hover:text-teal-400 transition-colors">+1 (123) 456-7890</a>
+                                    <a href="mailto:info@nantric.com" className="text-white/60 hover:text-teal-400 transition-colors">info@nantric.com</a>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <MapPin size={16} className="text-teal-400 mt-1" />
                                     <span className="text-white/60">
-                                        123 Tech Avenue<br />
-                                        San Francisco, CA 94103<br />
-                                        United States
+                                        Keulenstraat 12<br />
+                                        Deventer, 7418 ET<br />
+                                        The Netherlands
                                     </span>
                                 </li>
                             </ul>

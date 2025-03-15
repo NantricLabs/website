@@ -20,7 +20,8 @@ export const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const { scrollYProgress } = useScroll();
-    const headerOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
+    // Changed to start with full opacity and adjust background opacity instead
+    const headerBgOpacity = useTransform(scrollYProgress, [0, 0.05], [0.5, 0.8]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,9 +43,11 @@ export const Header = () => {
             {/* Header */}
             <motion.header
                 className="fixed top-0 w-full z-40 transition-all duration-300"
-                style={{ opacity: headerOpacity }}
             >
-                <div className="absolute inset-0 bg-black/80 backdrop-blur-xl border-b border-white/5"></div>
+                <motion.div
+                    className="absolute inset-0 bg-black backdrop-blur-xl border-b border-white/5"
+                    style={{ opacity: headerBgOpacity }}
+                ></motion.div>
                 <div className="container mx-auto px-6 py-4 relative flex justify-between items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -117,7 +120,7 @@ export const Header = () => {
 
                     <div className="hidden md:flex items-center gap-6">
                         <div className="h-5 w-[1px] bg-white/10"></div>
-                        <Button className="bg-white hover:bg-white/90 text-black hover:text-black font-medium px-5 h-10 rounded-full">
+                        <Button className="bg-teal-500 hover:bg-teal-400 text-black hover:text-black font-medium px-5 h-10 rounded-full shadow-md shadow-teal-500/20">
                             Get in touch
                         </Button>
                     </div>
