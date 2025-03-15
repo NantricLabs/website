@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
     ];
 
     return (
-        <section className="py-32 relative">
+        <section className="py-32 relative" id="projects">
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
@@ -63,7 +63,7 @@ export const ProjectsSection = () => {
                     ))}
                 </div>
 
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -79,7 +79,7 @@ export const ProjectsSection = () => {
                             <ArrowRight size={16} />
                         </span>
                     </Button>
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     );

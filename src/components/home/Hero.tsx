@@ -61,13 +61,13 @@ export const HeroSection = () => {
                                     href="#projects"
                                     className="flex items-center bg-teal-500 hover:bg-teal-400 text-black px-8 py-6 text-md font-medium h-14 rounded-full shadow-md shadow-teal-500/20"
                                 >
-                                    Our Projects
+                                    Contact us
                                 </Link>
                                 <Link
-                                    href="#services"
+                                    href="#projects"
                                     className="flex items-center border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-teal-400 px-8 py-6 text-md font-medium h-14 rounded-full"
                                 >
-                                    Our Services
+                                    Our Projects
                                 </Link>
                             </div>
                         </motion.div>

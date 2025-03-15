@@ -35,7 +35,7 @@ export const Header = () => {
 
             {/* Header */}
             <motion.header
-                className="fixed top-0 w-full z-40 transition-all duration-300"
+                className="fixed top-0 w-full z-40 transition-all duration-300 backdrop-blur-sm"
             >
                 <motion.div
                     className="absolute inset-0 border-b border-teal-900/30"
@@ -60,7 +60,7 @@ export const Header = () => {
                     <div className="flex items-center gap-4">
                         <Link
                             href="/login"
-                            className="flex items-center text-white/70 hover:text-white hover:bg-teal-950/30 rounded-full px-4"
+                            className="flex items-center py-2 text-white/70 hover:text-white hover:bg-teal-950/30 rounded-full px-4"
                         >
                             <p>Login</p>
                         </Link>

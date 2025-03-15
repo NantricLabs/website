@@ -49,7 +49,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                     ))}
                 </div>
 
-                <Button
+                {/* <Button
                     variant="outline"
                     className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full pl-6 pr-5 py-6 h-auto shadow-lg shadow-black/5"
                 >
@@ -57,7 +57,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                     <span className="p-2 rounded-full bg-white/10 group-hover:bg-teal-500/20 transition-colors">
                         <ArrowRight size={14} />
                     </span>
-                </Button>
+                </Button> */}
             </motion.div>
 
             <motion.div
