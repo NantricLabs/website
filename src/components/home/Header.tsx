@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image'
 
@@ -55,7 +55,9 @@ export const Header = () => {
                         className="flex items-center"
                     >
                         <Link href="/">
-                            <Image src={aLogo} alt="Nantric Logo" className='h-20 -ml-5 -my-5 w-auto' />
+                            <div className='h-20 w-auto -ml-5 -my-5'>
+                                <Image src={aLogo} alt="Nantric Logo" className='h-full w-auto' />
+                            </div>
                         </Link>
                     </motion.div>
 
