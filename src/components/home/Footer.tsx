@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { Twitter, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 import aLogo from '@/assets/logo.png'
+import { Link } from '@/locales/navigation';
 
 export const Footer = () => {
     return (
@@ -27,7 +28,7 @@ export const Footer = () => {
                         </p>
 
                         <div className="flex gap-4">
-                            <a
+                            <Link
                                 href="https://github.com/NantricLabs"
                                 target="_blank"
                                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center 
@@ -35,7 +36,7 @@ export const Footer = () => {
                 hover:border-teal-500/50 transition-colors"
                             >
                                 <Github size={16} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -44,16 +45,16 @@ export const Footer = () => {
                             <h3 className="font-medium text-white mb-6">Services</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Custom Software</a>
+                                    <Link href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Custom Software</Link>
                                 </li>
                                 <li>
-                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">SaaS Development</a>
+                                    <Link href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">SaaS Development</Link>
                                 </li>
                                 <li>
-                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Hosting &amp; Cloud</a>
+                                    <Link href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Hosting &amp; Cloud</Link>
                                 </li>
                                 <li>
-                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">API Integration</a>
+                                    <Link href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">API Integration</Link>
                                 </li>
                             </ul>
                         </div>
@@ -62,13 +63,13 @@ export const Footer = () => {
                             <h3 className="font-medium text-white mb-6">Company</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">About Us</a>
+                                    <Link href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">About Us</Link>
                                 </li>
                                 <li>
-                                    <a href="#contact" className="text-white/60 hover:text-teal-400 transition-colors">Contact</a>
+                                    <Link href="#contact" className="text-white/60 hover:text-teal-400 transition-colors">Contact</Link>
                                 </li>
                                 <li>
-                                    <a href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Blog</a>
+                                    <Link href="/wip" className="text-white/60 hover:text-teal-400 transition-colors">Blog</Link>
                                 </li>
                             </ul>
                         </div>
@@ -78,12 +79,12 @@ export const Footer = () => {
                             <ul className="space-y-4">
                                 <li className="flex items-center gap-3">
                                     <Mail size={16} className="text-teal-400" />
-                                    <a
+                                    <Link
                                         href="mailto:info@nantric.com"
                                         className="text-white/60 hover:text-teal-400 transition-colors"
                                     >
                                         info@nantric.com
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <MapPin size={16} className="text-teal-400 mt-1" />
@@ -105,24 +106,24 @@ export const Footer = () => {
                         © {new Date().getFullYear()} Nantric. All rights reserved.
                     </p>
                     <div className="flex gap-8">
-                        <a
+                        <Link
                             href="/wip"
                             className="text-white/40 hover:text-teal-400 text-sm transition-colors"
                         >
                             Privacy Policy
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="/wip"
                             className="text-white/40 hover:text-teal-400 text-sm transition-colors"
                         >
                             Terms of Service
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="/wip"
                             className="text-white/40 hover:text-teal-400 text-sm transition-colors"
                         >
                             Sitemap
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
