@@ -1,10 +1,11 @@
-import React from 'react';
+import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
-import { Separator } from "@/components/ui/separator";
-import { Twitter, Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Twitter, Github, Linkedin, Mail, MapPin } from 'lucide-react'
+
+import { Separator } from "@/components/ui/separator"
 
 import aLogo from '@/assets/logo.png'
-import { Link } from '@/locales/navigation';
 
 export const Footer = () => {
     return (
@@ -129,4 +130,4 @@ export const Footer = () => {
             </div>
         </footer>
     );
-};
+}
