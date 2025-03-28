@@ -62,24 +62,6 @@ export const ProjectsSection = () => {
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
-
-                {/* <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
-                    className="mt-20 text-center"
-                >
-                    <Button
-                        variant="outline"
-                        className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full px-8 py-6 h-auto mx-auto"
-                    >
-                        <span className="mr-3">View All Projects</span>
-                        <span className="p-2 rounded-full bg-white/10 group-hover:bg-teal-500/20 transition-colors">
-                            <ArrowRight size={16} />
-                        </span>
-                    </Button>
-                </motion.div> */}
             </div>
         </section>
     );

@@ -1,7 +1,9 @@
 import { Inter } from 'next/font/google'
+import dynamic from 'next/dynamic'
 import '@/styles/globals.css'
 import { Header } from '@/components/home/Header'
 import { Footer } from '@/components/home/Footer'
+import CrispChat from '@/components/Crisp'
 
 export const metadata = {
     title: 'Nantric - Modern Software Solutions',
@@ -23,6 +25,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <Footer />
                 </div>
             </body>
+
+            <CrispChat />
         </html>
     )
 }
