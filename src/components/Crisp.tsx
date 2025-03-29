@@ -6,7 +6,7 @@ import { Crisp } from "crisp-sdk-web"
 
 class CrispChat extends Component {
     componentDidMount() {
-        Crisp.configure(process.env.NEXT_PUBLIC_CRISP_ID as string)
+        if (process.env.NEXT_PUBLIC_CRISP_ID) Crisp.configure(process.env.NEXT_PUBLIC_CRISP_ID as string)
     }
 
     render() {
