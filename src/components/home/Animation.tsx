@@ -194,7 +194,6 @@ export default App`
                                 d="M0 1 L80 1"
                                 stroke="url(#gradient)"
                                 strokeWidth="2"
-                                variants={connectionVariants}
                                 initial="hidden"
                                 animate={deploymentStarted ? "visible" : "hidden"}
                             />
@@ -208,7 +207,6 @@ export default App`
                                 <motion.circle
                                     r="3"
                                     fill="#14b8a6"
-                                    variants={dataPacketVariants}
                                     initial="hidden"
                                     animate="visible"
                                 />
@@ -243,7 +241,6 @@ export default App`
                                 d="M0 1 L80 1"
                                 stroke="url(#gradient2)"
                                 strokeWidth="2"
-                                variants={connectionVariants}
                                 initial="hidden"
                                 animate={deploymentComplete ? "visible" : "hidden"}
                             />
@@ -257,7 +254,6 @@ export default App`
                                 <motion.circle
                                     r="3"
                                     fill="#14b8a6"
-                                    variants={dataPacketVariants}
                                     initial="hidden"
                                     animate="visible"
                                 />
@@ -292,7 +288,6 @@ export default App`
                                 d="M0 1 L80 1"
                                 stroke="url(#gradient3)"
                                 strokeWidth="2"
-                                variants={connectionVariants}
                                 initial="hidden"
                                 animate={showUsers ? "visible" : "hidden"}
                             />
@@ -307,14 +302,12 @@ export default App`
                                     <motion.circle
                                         r="3"
                                         fill="#14b8a6"
-                                        variants={dataPacketVariants}
                                         initial="hidden"
                                         animate="visible"
                                     />
                                     <motion.circle
                                         r="3"
                                         fill="#14b8a6"
-                                        variants={dataPacketVariants}
                                         initial="hidden"
                                         animate="visible"
                                         style={{ translateX: -20 }}
