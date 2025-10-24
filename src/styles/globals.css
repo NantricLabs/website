@@ -10,28 +10,28 @@ button:hover {
 
 /* Keyframes for gradient text animation */
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .animate-gradient {
-  animation: gradient 8s ease-in-out infinite;
-  background-size: 400% 400%;
+	animation: gradient 8s ease-in-out infinite;
+	background-size: 400% 400%;
 }
 
 .direction-rtl {
-  direction: rtl;
+	direction: rtl;
 }
 
 .direction-rtl * {
-  direction: ltr;
+	direction: ltr;
 }
 
 @layer base {
@@ -42,7 +42,7 @@ button:hover {
 	body {
 		@apply bg-white text-gray-900 overflow-x-hidden;
 		letter-spacing: var(--tracking-normal);
-		font-family: 'Inter', sans-serif;
+		font-family: "Inter", sans-serif;
 	}
 
 	html {
@@ -60,17 +60,25 @@ button:hover {
 	}
 
 	/* Text styling */
-	h1, h2, h3, h4, h5, h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		@apply font-bold;
 	}
 
 	/* Focus styles */
-	input:focus, textarea:focus, button:focus {
+	input:focus,
+	textarea:focus,
+	button:focus {
 		@apply outline-none ring-2 ring-teal-500/50;
 	}
 
 	/* Button hover animations */
-	button, .button {
+	button,
+	.button {
 		@apply transition-all duration-300 transform hover:scale-105;
 	}
 }

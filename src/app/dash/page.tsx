@@ -2,17 +2,17 @@
 
 import { useAuthActions } from "@convex-dev/auth/react"
 import { useMutation, useQuery } from "convex/react"
-import { LogOut, Mail, CheckCircle2, XCircle, Upload, X } from "lucide-react"
-import { useEffect, useState, useRef } from "react"
+import { CheckCircle2, LogOut, Mail, Upload, X, XCircle } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
 import { toast } from "sonner"
 import { api } from "@/../convex/_generated/api"
-import { ThemeToggle } from "@/components/ThemeToggle"
 import { ProfilePicture } from "@/components/ProfilePicture"
+import { ThemeToggle } from "@/components/ThemeToggle"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Badge } from "@/components/ui/badge"
 
 export default function Page() {
 	const { signOut } = useAuthActions()
@@ -132,7 +132,6 @@ export default function Page() {
 							</div>
 
 							<div className="flex flex-col items-center space-y-4">
-								<ProfilePicture user={user} size="xl" />
 								<div className="flex gap-2">
 									<Button
 										size="sm"
@@ -176,7 +175,10 @@ export default function Page() {
 										{user?.email && (
 											<div className="flex items-center gap-2">
 												{isEmailVerified ? (
-													<Badge variant="outline" className="gap-1.5 border-green-600 text-green-600">
+													<Badge
+														variant="outline"
+														className="gap-1.5 border-green-600 text-green-600"
+													>
 														Verified
 													</Badge>
 												) : (

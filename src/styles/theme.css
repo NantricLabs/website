@@ -4,22 +4,22 @@ and generate custom color palettes for your project.
 */
 
 :root {
-	--background: oklch(1.0000 0 0);
+	--background: oklch(1 0 0);
 	--foreground: oklch(0.3211 0 0);
-	--card: oklch(0.9850 0.0020 247.8390);
+	--card: oklch(0.985 0.002 247.839);
 	--card-foreground: oklch(0.3211 0 0);
-	--popover: oklch(1.0000 0 0);
+	--popover: oklch(1 0 0);
 	--popover-foreground: oklch(0.3211 0 0);
 	--primary: oklch(0.7284 0.1228 198.8622);
-	--primary-foreground: oklch(1.0000 0 0);
-	--secondary: oklch(0.9670 0.0029 264.5419);
+	--primary-foreground: oklch(1 0 0);
+	--secondary: oklch(0.967 0.0029 264.5419);
 	--secondary-foreground: oklch(0.4461 0.0263 256.8018);
 	--muted: oklch(0.9846 0.0017 247.8389);
-	--muted-foreground: oklch(0.5510 0.0234 264.3637);
-	--accent: oklch(0.9666 0.0411 200.2210);
+	--muted-foreground: oklch(0.551 0.0234 264.3637);
+	--accent: oklch(0.9666 0.0411 200.221);
 	--accent-foreground: oklch(0.4035 0.0649 199.3531);
 	--destructive: oklch(0.6368 0.2078 25.3313);
-	--destructive-foreground: oklch(1.0000 0 0);
+	--destructive-foreground: oklch(1 0 0);
 	--border: oklch(0.9276 0.0058 264.5313);
 	--input: oklch(0.9276 0.0058 264.5313);
 	--ring: oklch(0.7284 0.1228 198.8622);
@@ -31,8 +31,8 @@ and generate custom color palettes for your project.
 	--sidebar: oklch(0.9846 0.0017 247.8389);
 	--sidebar-foreground: oklch(0.3211 0 0);
 	--sidebar-primary: oklch(0.7284 0.1228 198.8622);
-	--sidebar-primary-foreground: oklch(1.0000 0 0);
-	--sidebar-accent: oklch(0.9666 0.0411 200.2210);
+	--sidebar-primary-foreground: oklch(1 0 0);
+	--sidebar-accent: oklch(0.9666 0.0411 200.221);
 	--sidebar-accent-foreground: oklch(0.4035 0.0649 199.3531);
 	--sidebar-border: oklch(0.9276 0.0058 264.5313);
 	--sidebar-ring: oklch(0.7284 0.1228 198.8622);
@@ -46,14 +46,14 @@ and generate custom color palettes for your project.
 	--shadow-spread: 0px;
 	--shadow-opacity: 0;
 	--shadow-color: oklch(0 0 0);
-	--shadow-2xs: 0 1px 0px 0px hsl(0 0% 0% / 0.00);
-	--shadow-xs: 0 1px 0px 0px hsl(0 0% 0% / 0.00);
-	--shadow-sm: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 1px 2px -1px hsl(0 0% 0% / 0.00);
-	--shadow: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 1px 2px -1px hsl(0 0% 0% / 0.00);
-	--shadow-md: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 2px 4px -1px hsl(0 0% 0% / 0.00);
-	--shadow-lg: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 4px 6px -1px hsl(0 0% 0% / 0.00);
-	--shadow-xl: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 8px 10px -1px hsl(0 0% 0% / 0.00);
-	--shadow-2xl: 0 1px 0px 0px hsl(0 0% 0% / 0.00);
+	--shadow-2xs: 0 1px 0px 0px hsl(0 0% 0% / 0);
+	--shadow-xs: 0 1px 0px 0px hsl(0 0% 0% / 0);
+	--shadow-sm: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 1px 2px -1px hsl(0 0% 0% / 0);
+	--shadow: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 1px 2px -1px hsl(0 0% 0% / 0);
+	--shadow-md: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 2px 4px -1px hsl(0 0% 0% / 0);
+	--shadow-lg: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 4px 6px -1px hsl(0 0% 0% / 0);
+	--shadow-xl: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 8px 10px -1px hsl(0 0% 0% / 0);
+	--shadow-2xl: 0 1px 0px 0px hsl(0 0% 0% / 0);
 	--tracking-normal: 0em;
 	--spacing: 0.25rem;
 }
@@ -66,7 +66,7 @@ and generate custom color palettes for your project.
 	--popover: oklch(0.2686 0 0);
 	--popover-foreground: oklch(0.9219 0 0);
 	--primary: oklch(0.7284 0.1228 198.8622);
-	--primary-foreground: oklch(1.0000 0 0);
+	--primary-foreground: oklch(1 0 0);
 	--secondary: oklch(0.2686 0 0);
 	--secondary-foreground: oklch(0.9219 0 0);
 	--muted: oklch(0.2686 0 0);
@@ -74,7 +74,7 @@ and generate custom color palettes for your project.
 	--accent: oklch(0.4035 0.0649 199.3531);
 	--accent-foreground: oklch(0.7284 0.1228 198.8622);
 	--destructive: oklch(0.6368 0.2078 25.3313);
-	--destructive-foreground: oklch(1.0000 0 0);
+	--destructive-foreground: oklch(1 0 0);
 	--border: oklch(0.3715 0 0);
 	--input: oklch(0.3715 0 0);
 	--ring: oklch(0.7284 0.1228 198.8622);
@@ -86,11 +86,11 @@ and generate custom color palettes for your project.
 	--sidebar: oklch(0.2046 0 0);
 	--sidebar-foreground: oklch(0.9219 0 0);
 	--sidebar-primary: oklch(0.7284 0.1228 198.8622);
-	--sidebar-primary-foreground: oklch(1.0000 0 0);
+	--sidebar-primary-foreground: oklch(1 0 0);
 	--sidebar-accent: oklch(0.4035 0.0649 199.3531);
 	--sidebar-accent-foreground: oklch(0.7284 0.1228 198.8622);
 	--sidebar-border: oklch(0.3715 0 0);
-	--sidebar-ring: oklch(0.6231 0.1880 259.8145);
+	--sidebar-ring: oklch(0.6231 0.188 259.8145);
 	--font-sans: Inter, sans-serif;
 	--font-serif: Source Serif 4, serif;
 	--font-mono: JetBrains Mono, monospace;
@@ -101,14 +101,14 @@ and generate custom color palettes for your project.
 	--shadow-spread: 0px;
 	--shadow-opacity: 0;
 	--shadow-color: oklch(0 0 0);
-	--shadow-2xs: 0 1px 0px 0px hsl(0 0% 0% / 0.00);
-	--shadow-xs: 0 1px 0px 0px hsl(0 0% 0% / 0.00);
-	--shadow-sm: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 1px 2px -1px hsl(0 0% 0% / 0.00);
-	--shadow: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 1px 2px -1px hsl(0 0% 0% / 0.00);
-	--shadow-md: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 2px 4px -1px hsl(0 0% 0% / 0.00);
-	--shadow-lg: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 4px 6px -1px hsl(0 0% 0% / 0.00);
-	--shadow-xl: 0 1px 0px 0px hsl(0 0% 0% / 0.00), 0 8px 10px -1px hsl(0 0% 0% / 0.00);
-	--shadow-2xl: 0 1px 0px 0px hsl(0 0% 0% / 0.00);
+	--shadow-2xs: 0 1px 0px 0px hsl(0 0% 0% / 0);
+	--shadow-xs: 0 1px 0px 0px hsl(0 0% 0% / 0);
+	--shadow-sm: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 1px 2px -1px hsl(0 0% 0% / 0);
+	--shadow: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 1px 2px -1px hsl(0 0% 0% / 0);
+	--shadow-md: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 2px 4px -1px hsl(0 0% 0% / 0);
+	--shadow-lg: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 4px 6px -1px hsl(0 0% 0% / 0);
+	--shadow-xl: 0 1px 0px 0px hsl(0 0% 0% / 0), 0 8px 10px -1px hsl(0 0% 0% / 0);
+	--shadow-2xl: 0 1px 0px 0px hsl(0 0% 0% / 0);
 }
 
 @theme inline {

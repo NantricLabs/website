@@ -10,7 +10,8 @@ import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
 	title: "Nantric - Modern Software Solutions",
-	description: "Custom software development, SaaS development, and web development services by Nantric.",
+	description:
+		"Custom software development, SaaS development, and web development services by Nantric.",
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
