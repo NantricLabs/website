@@ -31,28 +31,28 @@ export const ProjectsSection = () => {
     ];
 
     return (
-        <section className="py-32 relative" id="projects">
+        <section className="py-32 relative bg-gradient-to-b from-white to-gray-50" id="projects">
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-                <div className="absolute top-1/2 -translate-y-1/2 right-0 w-1/3 aspect-square bg-teal-500/5 rounded-full blur-3xl opacity-50" />
-                <div className="absolute top-3/4 -translate-y-1/2 left-0 w-1/4 aspect-square bg-teal-500/5 rounded-full blur-3xl opacity-30" />
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+                <div className="absolute top-1/2 -translate-y-1/2 right-0 w-1/3 aspect-square bg-teal-400/10 rounded-full blur-3xl opacity-50" />
+                <div className="absolute top-3/4 -translate-y-1/2 left-0 w-1/4 aspect-square bg-teal-400/10 rounded-full blur-3xl opacity-30" />
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                     <div>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium mb-5 backdrop-blur-sm">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-600 text-xs font-medium mb-5 backdrop-blur-sm">
                             Featured Work
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold max-w-md leading-tight">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-400">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-500">
                                 Projects
                             </span>{" "}
-                            with Impact
+                            <span className="text-gray-900">with Impact</span>
                         </h2>
                     </div>
-                    <p className="text-white/60 max-w-md md:text-right">
+                    <p className="text-gray-600 max-w-md md:text-right">
                         Discover some of our innovative solutions that have helped businesses transform and grow.
                     </p>
                 </div>

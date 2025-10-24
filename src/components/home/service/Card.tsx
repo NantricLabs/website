@@ -57,17 +57,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, del
         >
             <div className="relative p-1 group">
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                <Card className="bg-black/50 backdrop-blur-sm border-white/10 group-hover:border-teal-500/30 transition-all h-full relative shadow-xl shadow-black/5">
+                <Card className="bg-white backdrop-blur-sm border-gray-200 group-hover:border-teal-400 group-hover:shadow-teal-500/10 transition-all h-full relative shadow-lg shadow-gray-300/30">
                     <CardHeader>
-                        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 mb-4 group-hover:border-teal-500/50 group-hover:bg-white/10 transition-colors">
-                            <div className="text-teal-400">
+                        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-teal-50 backdrop-blur-sm border border-teal-200 mb-4 group-hover:border-teal-500 group-hover:bg-teal-100 transition-colors">
+                            <div className="text-teal-600">
                                 {React.cloneElement(icon as React.ReactElement)}
                             </div>
                         </div>
-                        <CardTitle className="text-xl text-white group-hover:text-teal-400 transition-colors">
+                        <CardTitle className="text-xl text-gray-900 group-hover:text-teal-600 transition-colors">
                             {title}
                         </CardTitle>
-                        <CardDescription className="text-white/50 group-hover:text-white/70 transition-colors">
+                        <CardDescription className="text-gray-600 group-hover:text-gray-700 transition-colors">
                             {description}
                         </CardDescription>
                     </CardHeader>

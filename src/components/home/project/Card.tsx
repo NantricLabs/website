@@ -29,20 +29,20 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                 viewport={{ once: true }}
                 className={`${reverse ? 'order-1' : 'order-2 lg:order-1'}`}
             >
-                <div className="text-xs font-medium text-white/40 tracking-wider mb-2">{id} / PROJECT</div>
-                <h3 className="text-3xl font-bold mb-4 flex items-center gap-3">
+                <div className="text-xs font-medium text-gray-500 tracking-wider mb-2">{id} / PROJECT</div>
+                <h3 className="text-3xl font-bold mb-4 flex items-center gap-3 text-gray-900">
                     {title}
-                    <div className="inline-flex items-center px-2 py-1 rounded-full bg-teal-500/10 text-teal-400 text-xs font-medium">
+                    <div className="inline-flex items-center px-2 py-1 rounded-full bg-teal-100 text-teal-600 text-xs font-medium">
                         {tag}
                     </div>
                 </h3>
-                <p className="text-white/60 mb-6 leading-relaxed">{description}</p>
+                <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
                 <div className="flex flex-wrap gap-2 mb-8">
                     {technologies.map((tech, index) => (
                         <span
                             key={index}
-                            className="text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10 
-              text-white/70 hover:border-teal-500/30 hover:text-teal-400 transition-colors cursor-default"
+                            className="text-xs px-3 py-1.5 rounded-full bg-gray-100 border border-gray-200
+              text-gray-700 hover:border-teal-400 hover:text-teal-600 transition-colors cursor-default"
                         >
                             {tech}
                         </span>
@@ -51,10 +51,10 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
 
                 {/* <Button
                     variant="outline"
-                    className="group border-white/20 bg-transparent hover:border-teal-500/50 text-white hover:text-teal-400 rounded-full pl-6 pr-5 py-6 h-auto shadow-lg shadow-black/5"
+                    className="group border-gray-300 bg-white hover:border-teal-500 text-gray-900 hover:text-teal-600 rounded-full pl-6 pr-5 py-6 h-auto shadow-lg shadow-gray-200/50"
                 >
                     <span className="mr-3">View Case Study</span>
-                    <span className="p-2 rounded-full bg-white/10 group-hover:bg-teal-500/20 transition-colors">
+                    <span className="p-2 rounded-full bg-gray-100 group-hover:bg-teal-100 transition-colors">
                         <ArrowRight size={14} />
                     </span>
                 </Button> */}
@@ -77,29 +77,29 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
 const DreamPrintMockup = () => {
     return (
         <>
-            <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full" />
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-xl shadow-black/30">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]" />
+            <div className="absolute -inset-10 bg-teal-500/10 blur-3xl rounded-full" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200 bg-gradient-to-br from-white to-gray-50 shadow-2xl shadow-gray-400/20">
+                <div className="absolute inset-0 bg-grid-gray-200/[0.5] bg-[length:30px_30px]" />
                 <div className="absolute inset-6 flex items-center justify-center">
                     <div className="relative w-full h-full">
                         {/* 3D Model Preview Mockup */}
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <Cuboid size={100} className="text-teal-400/50" strokeWidth={1} />
+                            <Cuboid size={100} className="text-teal-400/70" strokeWidth={1} />
                         </div>
                         {/* Controls */}
-                        <div className="absolute bottom-0 left-0 right-0 flex justify-between p-4 bg-gradient-to-t from-black/40 to-transparent">
+                        <div className="absolute bottom-0 left-0 right-0 flex justify-between p-4 bg-gradient-to-t from-white/60 to-transparent backdrop-blur-sm">
                             <div className="flex gap-2">
-                                <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <div className="w-2 h-2 rounded-full bg-teal-400" />
+                                <div className="w-8 h-8 rounded-full bg-white border border-gray-200 backdrop-blur-sm flex items-center justify-center shadow-sm">
+                                    <div className="w-2 h-2 rounded-full bg-teal-500" />
                                 </div>
-                                <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <div className="w-2 h-2 rounded-full bg-white/50" />
+                                <div className="w-8 h-8 rounded-full bg-white border border-gray-200 backdrop-blur-sm flex items-center justify-center shadow-sm">
+                                    <div className="w-2 h-2 rounded-full bg-gray-300" />
                                 </div>
-                                <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                                    <div className="w-2 h-2 rounded-full bg-white/50" />
+                                <div className="w-8 h-8 rounded-full bg-white border border-gray-200 backdrop-blur-sm flex items-center justify-center shadow-sm">
+                                    <div className="w-2 h-2 rounded-full bg-gray-300" />
                                 </div>
                             </div>
-                            <div className="py-2 px-3 rounded-full bg-white/10 backdrop-blur-sm text-xs">
+                            <div className="py-2 px-3 rounded-full bg-white border border-gray-200 backdrop-blur-sm text-xs text-gray-700 shadow-sm">
                                 Studio
                             </div>
                         </div>
@@ -113,52 +113,52 @@ const DreamPrintMockup = () => {
 const UpAlertMockup = () => {
     return (
         <>
-            <div className="absolute -inset-10 bg-teal-500/5 blur-3xl rounded-full" />
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-xl shadow-black/30">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]" />
+            <div className="absolute -inset-10 bg-teal-500/10 blur-3xl rounded-full" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200 bg-gradient-to-br from-white to-gray-50 shadow-2xl shadow-gray-400/20">
+                <div className="absolute inset-0 bg-grid-gray-200/[0.5] bg-[length:30px_30px]" />
                 <div className="absolute inset-8 flex flex-col">
                     {/* Dashboard Mockup */}
                     <div className="flex items-center justify-between mb-6">
-                        <div className="text-sm font-medium">Server Status Dashboard</div>
+                        <div className="text-sm font-medium text-gray-900">Server Status Dashboard</div>
                         <div className="flex gap-1.5">
-                            <div className="w-2 h-2 rounded-full bg-teal-400" />
-                            <div className="w-2 h-2 rounded-full bg-white/40" />
-                            <div className="w-2 h-2 rounded-full bg-white/40" />
+                            <div className="w-2 h-2 rounded-full bg-teal-500" />
+                            <div className="w-2 h-2 rounded-full bg-gray-300" />
+                            <div className="w-2 h-2 rounded-full bg-gray-300" />
                         </div>
                     </div>
 
                     {/* Status panels */}
                     <div className="flex-1 grid grid-cols-6 gap-3">
-                        <div className="col-span-4 rounded-lg bg-white/5 p-3 flex flex-col hover:bg-white/10 transition-colors">
-                            <div className="text-xs text-white/40 mb-2">Uptime</div>
+                        <div className="col-span-4 rounded-lg bg-white border border-gray-200 p-3 flex flex-col hover:border-teal-400 transition-colors shadow-sm">
+                            <div className="text-xs text-gray-500 mb-2">Uptime</div>
                             <div className="flex-1 flex items-end space-x-1">
                                 {[65, 85, 95, 75, 100, 85, 90, 95].map((height, i) => (
                                     <div
                                         key={i}
-                                        className="flex-1 bg-gradient-to-t from-teal-500/80 to-teal-500/20 rounded-sm"
+                                        className="flex-1 bg-gradient-to-t from-teal-500 to-teal-400 rounded-sm"
                                         style={{ height: `${height}%` }}
                                     />
                                 ))}
                             </div>
                         </div>
-                        <div className="col-span-2 rounded-lg bg-white/5 p-3 flex flex-col hover:bg-white/10 transition-colors">
-                            <div className="text-xs text-white/40 mb-2">Status</div>
+                        <div className="col-span-2 rounded-lg bg-white border border-gray-200 p-3 flex flex-col hover:border-teal-400 transition-colors shadow-sm">
+                            <div className="text-xs text-gray-500 mb-2">Status</div>
                             <div className="flex-1 flex flex-col justify-center items-center">
-                                <div className="w-12 h-12 rounded-full bg-teal-500/10 flex items-center justify-center">
-                                    <div className="w-3 h-3 rounded-full bg-teal-400" />
+                                <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center">
+                                    <div className="w-3 h-3 rounded-full bg-teal-500" />
                                 </div>
-                                <div className="text-xs mt-2 text-center text-teal-400">Online</div>
+                                <div className="text-xs mt-2 text-center text-teal-600 font-medium">Online</div>
                             </div>
                         </div>
-                        <div className="col-span-3 rounded-lg bg-white/5 p-3 hover:bg-white/10 transition-colors">
-                            <div className="text-xs text-white/40 mb-2">Response Time</div>
-                            <div className="text-2xl font-bold text-teal-400">42ms</div>
-                            <div className="text-xs text-white/40">AVG</div>
+                        <div className="col-span-3 rounded-lg bg-white border border-gray-200 p-3 hover:border-teal-400 transition-colors shadow-sm">
+                            <div className="text-xs text-gray-500 mb-2">Response Time</div>
+                            <div className="text-2xl font-bold text-teal-600">42ms</div>
+                            <div className="text-xs text-gray-500">AVG</div>
                         </div>
-                        <div className="col-span-3 rounded-lg bg-white/5 p-3 hover:bg-white/10 transition-colors">
-                            <div className="text-xs text-white/40 mb-2">Reliability</div>
-                            <div className="text-2xl font-bold text-white">99.9%</div>
-                            <div className="text-xs text-white/40">Last 90 days</div>
+                        <div className="col-span-3 rounded-lg bg-white border border-gray-200 p-3 hover:border-teal-400 transition-colors shadow-sm">
+                            <div className="text-xs text-gray-500 mb-2">Reliability</div>
+                            <div className="text-2xl font-bold text-gray-900">99.9%</div>
+                            <div className="text-xs text-gray-500">Last 90 days</div>
                         </div>
                     </div>
                 </div>

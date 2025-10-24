@@ -40,7 +40,7 @@ button:hover {
 	}
 
 	body {
-		@apply bg-black text-white overflow-x-hidden;
+		@apply bg-white text-gray-900 overflow-x-hidden;
 		letter-spacing: var(--tracking-normal);
 		font-family: 'Inter', sans-serif;
 	}
@@ -51,12 +51,12 @@ button:hover {
 
 	/* Glowing effects */
 	.glow-teal {
-		box-shadow: 0 0 15px 2px rgba(20, 184, 166, 0.3);
+		box-shadow: 0 0 15px 2px rgba(20, 184, 166, 0.2);
 	}
 
 	/* Glass effect */
 	.glass {
-		@apply backdrop-blur-lg bg-white/5 border border-white/10;
+		@apply backdrop-blur-lg bg-white/90 border border-gray-200;
 	}
 
 	/* Text styling */
