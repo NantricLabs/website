@@ -40,7 +40,7 @@ button:hover {
 	}
 
 	body {
-		@apply bg-white text-gray-900 overflow-x-hidden;
+		@apply bg-background text-foreground overflow-x-hidden;
 		letter-spacing: var(--tracking-normal);
 		font-family: "Inter", sans-serif;
 	}
@@ -49,36 +49,66 @@ button:hover {
 		scroll-behavior: smooth;
 	}
 
-	/* Glowing effects */
-	.glow-teal {
-		box-shadow: 0 0 15px 2px rgba(20, 184, 166, 0.2);
+	/* Glowing effects - updated for orange/red theme */
+	.glow-primary {
+		box-shadow: 0 0 20px 3px rgba(238, 52, 47, 0.3);
 	}
 
-	/* Glass effect */
+	.glow-accent {
+		box-shadow: 0 0 15px 2px rgba(90, 212, 230, 0.3);
+	}
+
+	/* Glass effect - dark theme version */
 	.glass {
-		@apply backdrop-blur-lg bg-white/90 border border-gray-200;
+		@apply backdrop-blur-lg bg-card/80 border border-border;
 	}
 
-	/* Text styling */
+	/* Text styling with better hierarchy */
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
-		@apply font-bold;
+		@apply font-bold text-foreground;
 	}
 
-	/* Focus styles */
+	h1 {
+		@apply text-5xl lg:text-6xl xl:text-7xl;
+	}
+
+	h2 {
+		@apply text-4xl lg:text-5xl;
+	}
+
+	h3 {
+		@apply text-3xl lg:text-4xl;
+	}
+
+	/* Focus styles - updated for orange/red primary */
 	input:focus,
 	textarea:focus,
 	button:focus {
-		@apply outline-none ring-2 ring-teal-500/50;
+		@apply outline-none ring-2 ring-primary/50;
 	}
 
-	/* Button hover animations */
+	/* Button hover animations - smoother */
 	button,
 	.button {
-		@apply transition-all duration-300 transform hover:scale-105;
+		@apply transition-all duration-300 ease-out;
+	}
+
+	/* Code blocks styling for developer aesthetic */
+	code {
+		@apply font-mono text-sm bg-muted px-1.5 py-0.5 rounded;
+	}
+
+	pre {
+		@apply font-mono text-sm bg-muted p-4 rounded-lg overflow-x-auto;
+	}
+
+	/* Selection color */
+	::selection {
+		@apply bg-primary/30 text-foreground;
 	}
 }
