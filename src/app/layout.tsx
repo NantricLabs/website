@@ -9,9 +9,8 @@ import "@/styles/globals.css"
 import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
-	title: "Nantric - Modern Software Solutions",
-	description:
-		"Custom software development, SaaS development, and web development services by Nantric.",
+	title: "next-leaflet",
+	description: "An optimized tech stack for efficiency.",
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
