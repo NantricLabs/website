@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body>
 				<ConvexClientProvider>
-					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+					<ThemeProvider attribute="class" defaultTheme="dark">
 						{children}
 					</ThemeProvider>
 				</ConvexClientProvider>

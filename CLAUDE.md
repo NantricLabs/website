@@ -104,13 +104,6 @@ Password reset emails use:
 
 **Note**: Email actions must use `internalAction` to prevent direct client access.
 
-### Theme Management
-
-Themes are synced between client and database:
-- `ThemeSync` component reads user's theme preference from Convex
-- `ThemeToggle` component updates both next-themes and Convex database
-- Middleware ensures theme persists across sessions
-
 ### Environment Configuration
 
 The `setup.mjs` script runs automatically on first dev start:

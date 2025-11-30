@@ -16,5 +16,48 @@ button:hover {
 	body {
 		@apply bg-background text-foreground;
 		letter-spacing: var(--tracking-normal);
+		box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.6);
+	}
+
+	/* Primary orange text selection */
+	::selection {
+		background-color: oklch(var(--primary) / 0.3);
+		color: inherit;
+	}
+
+	::-moz-selection {
+		background-color: oklch(var(--primary) / 0.3);
+		color: inherit;
+	}
+
+	/* Custom scrollbar styles */
+	.scrollbar-visible::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	.scrollbar-visible::-webkit-scrollbar-track {
+		background: oklch(var(--background) / 0.4);
+		border-radius: 4px;
+	}
+
+	.scrollbar-visible::-webkit-scrollbar-thumb {
+		background: oklch(var(--foreground) / 0.2);
+		border-radius: 4px;
+	}
+
+	.scrollbar-visible::-webkit-scrollbar-thumb:hover {
+		background: oklch(var(--foreground) / 0.3);
+	}
+
+	/* Orange selection highlight for remote code changes */
+	.remote-highlight-editor textarea::selection {
+		background-color: rgba(251, 146, 60, 0.5);
+		color: inherit;
+	}
+
+	.remote-highlight-editor textarea::-moz-selection {
+		background-color: rgba(251, 146, 60, 0.5);
+		color: inherit;
 	}
 }
