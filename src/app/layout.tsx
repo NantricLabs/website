@@ -1,27 +1,34 @@
-import type { Metadata } from "next"
-import { ThemeProvider } from "next-themes"
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-import ConvexClientProvider from "@/components/ConvexClientProvider"
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-import "@/styles/globals.css"
-import { Toaster } from "@/components/ui/sonner"
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-	title: "next-leaflet",
-	description: "An optimized tech stack for efficiency.",
-}
+  title: "Nantric",
+  description: "We build software that works.",
+};
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-	return (
-		<html lang="en" suppressHydrationWarning>
-			<body>
-				<ConvexClientProvider>
-					<ThemeProvider attribute="class" defaultTheme="dark">
-						{children}
-					</ThemeProvider>
-				</ConvexClientProvider>
-				<Toaster />
-			</body>
-		</html>
-	)
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
